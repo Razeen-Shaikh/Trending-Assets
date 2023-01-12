@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+.card {
+    width: 290px;
+    height: 350px;
+    position: relative;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(46, 49, 73, 0.1) 107.43%);
+    backdrop-filter: blur(50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Tomorrow';
+    font-style: normal;
+}
+
+.outside-circle {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: -50px;
+    border-radius: 50%;
+    border: 10px solid #14172B;
+}
+
+.outside-circle::before {
+    content: "";
+    position: absolute;
+    top: 40%;
+    width: 38px;
+    height: 38px;
+    left: -42px;
+    background-color: transparent;
+    border-top-right-radius: 38px;
+    box-shadow: 0px -20px 0 0 #14172B;
+}
+
+.outside-circle::after {
+    content: "";
+    position: absolute;
+    top: 40%;
+    width: 38px;
+    height: 38px;
+    background-color: transparent;
+    right: -42px;
+    border-top-left-radius: 38px;
+    box-shadow: 0px -20px 0 0 #14172B;
+}
+
+.inside-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(234, 179, 0, 0.06) 100%);
+    backdrop-filter: blur(50px);
+}
+
+.card:nth-child(1) .inside-circle {
+    background: linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(234, 179, 0, 0.06) 100%);
+    backdrop-filter: blur(50px);
+}
+
+.card:nth-child(2) .inside-circle {
+    background: linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(220, 31, 255, 0.1) 100%);
+    backdrop-filter: blur(50px);
+}
+
+.card:nth-child(3) .inside-circle {
+    background: linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(237, 240, 244, 0.1) 100%);
+    backdrop-filter: blur(50px);
+}
+
+.card:nth-child(4) .inside-circle {
+    background: linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(234, 179, 0, 0.06) 100%);
+    backdrop-filter: blur(50px);
+}
+
+.card:nth-child(5) .inside-circle {
+    background: linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(228, 45, 4, 0.1) 100%);
+    backdrop-filter: blur(50px);
+}
+
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.card:nth-child(1) .icon-circle {
+    background: #EAB300;
+}
+
+.card:nth-child(2) .icon-circle {
+    background: #000000;
+}
+
+.card:nth-child(3) .icon-circle {
+    background: #EDF0F4;
+}
+
+.card:nth-child(4) .icon-circle {
+    background: #F3BA2F;
+}
+
+.card:nth-child(5) .icon-circle {
+    background: #E42D04;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+    color: #737BAE;
+    opacity: 0.9;
+    margin-top: 3rem;
+}
+
+.price,
+.tvl-title,
+.pop {
+    margin-top: 1rem;
+}
+
+.tvl {
+    display: flex;
+    justify-content: space-around;
+}
+
+.right {
+    position: absolute;
+    right: 8%;
+    top: 25%;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.card:nth-child(1) .right {
+    color: #00FFA3;
+}
+
+.card:nth-child(2) .right {
+    color: #FF4D4D;
+}
+
+.card:nth-child(3) .right {
+    color: #FF4D4D;
+}
+
+.card:nth-child(4) .right {
+    color: #00FFA3;
+}
+
+.card:nth-child(5) .right {
+    color: #FF4D4D;
+}
+
+.value-container {
+    position: relative;
+    display: flex;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #ECF0FF;
+    opacity: 0.9;
+    background: #14172B;
+    border-radius: 17px;
+    margin-top: 0.5rem;
+    padding: 0.5rem 5.5rem;
+}
+
+.tvl-icon {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.3rem;
+}
+
+.bitcoin {
+    background: #EAB300;
+}
+
+.bitcoin img {
+    width: 9.74px;
+    height: 13.49px;
+}
+
+.binance {
+    background: #F3BA2F;
+}
+
+.binance img {
+    width: 14.67px;
+    height: 14.67px;
+}
+
+.ethereum {
+    background: #EDF0F4;
+}
+
+.ethereum img {
+    width: 8.01px;
+    height: 13.04px;
+}
+
+.solana {
+    background: #000000;
+}
+
+.solana img {
+    width: 12.63px;
+    height: 9.9px;
+}
+
+.shiba {
+    background: #E42D04;
+}
